@@ -1,1 +1,28 @@
+CS 321
+Quiz 3
+Consider the following recurrence
 
+T(N) = T(N/2) + 2T(N/4) + N
+T(1) = 2
+
+  1. Draw the top three levels for this recurrence.
+  
+                        N
+     [N/2]             [N/4]             [N/4]
+[N/4][N/8][N/8]   [N/8][N/16][N/16]   [N/8][N/16][N/16]
+
+  2. What is the total amount of work done at the second level(at depth 1) of the tree? Your answer must be fully simplified.
+    
+    N
+    
+  3. What is the total amount of work done at the third level(at depth 2) of the tree?
+  
+    N
+  
+  4. What is the depth of the deepest leaf in the complete tree?
+  
+    log_2(N)
+  
+  5. What is the depth of the shallowest leaf in the complete tree?
+  
+    log_4(N)
