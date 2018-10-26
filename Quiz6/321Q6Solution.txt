@@ -1,0 +1,26 @@
+1. (2 points) Intuitively explain why search always returns the correct value.
+
+  The search continues at changing indicies. After each iteration the search becomes more and more thorough until finally iterating over each element in the array. 
+    
+2. How many times is the line "if (a[i] == x) return i;" executed during the first iteration of the outer loop, i.e., when h is a.length = 2^k?
+
+  Answer: 1
+
+3. How many times is the line "if (a[i] == x) return i;" executed during the second iteration of the outer loop, i.e., when h is a.length/2 = 2^(k-1)?
+
+  Answer: 2
+
+4. How many times is the line "if (a[i] == x) return i;" executed during the third iteration of the outer loop, i.e., when h is a.length/4 = 2^(k-2)?
+
+  Answer: 4
+
+5. How many times is the line "if (a[i] == x) return i;" executed during the last iteration of the outer loop, i.e., when h = 1?
+
+  Answer: a.length times
+
+6. Write a summation expression for the total number of times the line "if (a[i] == x) return i;" is executed over ALL of the iterations of the outer loop, by filling in the mission parts of the following summation. 
+                    
+  S = sum(i=0)^(k) 2^i
+  
+7. Evaluate S from Q6, i.e., give a FULLY SIMPLIFIED, closed-form formula for it. 
+  S = 2^(k+1) - 1
